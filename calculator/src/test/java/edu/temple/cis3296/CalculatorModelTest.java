@@ -32,9 +32,19 @@ public class CalculatorModelTest {
 	@Test
 	public void shouldDivTwoByOne(){
 		assertEquals(2.0, calc.operationDiv(2.0, 1.0), 0.1);
-	} 
+	}
 
-	
+	@Test
+	public void shouldDivFiveByTen(){
+		assertEquals(0.5, calc.operationDiv(5.0, 10.0), 0.1);
+	}
+
+	@Test
+	public void shouldDivTenByFive(){
+		assertEquals(2.0, calc.operationDiv(10.0, 5.0), 0.1);
+	}
+
+
 
 
 }
