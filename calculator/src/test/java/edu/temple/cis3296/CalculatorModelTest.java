@@ -28,7 +28,8 @@ public class CalculatorModelTest {
 	public void shouldMultTwoByOne(){
 		assertEquals(2.0, calc.operationMult(2.0, 1.0), 0.1);
 	}
-
+	
+	// this tests for a mutliplcation that is not the identity
 	@Test
         public void shouldMultTwoBy4(){
                 assertEquals(8.0, calc.operationMult(2.0, 4.0), 0.1);
