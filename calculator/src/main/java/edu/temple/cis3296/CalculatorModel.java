@@ -118,7 +118,7 @@ public class CalculatorModel {
     }
 
     public double operationDiv(double rhs, double lhs) {
-        return rhs;
+        return rhs/lhs;
     }
 
 
