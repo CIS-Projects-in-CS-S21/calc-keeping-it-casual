@@ -103,7 +103,7 @@ public class CalculatorModel {
     }
 
     public double operationAdd(double rhs, double lhs) {
-        return lhs + lhs;
+        return rhs + lhs;
     }
 
     //Fixed bug by changing equation from lhs-rhs to rhs-lhs
