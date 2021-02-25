@@ -106,12 +106,15 @@ public class CalculatorModel {
         return lhs + lhs;
     }
 
+    //Fixed bug by changing equation from lhs-rhs to rhs-lhs
     public double operationSubst(double rhs, double lhs) {
-        return (lhs - rhs);
+        return (rhs-lhs);
     }
 
+    // use the standard  definition of multiplication to do this action
+    // multiplying the first argument by the second
     public double operationMult(double rhs, double lhs) {
-        return rhs;
+        return rhs * lhs;
     }
 
     public double operationDiv(double rhs, double lhs) {

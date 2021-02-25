@@ -27,24 +27,34 @@ public class CalculatorModelTest {
 	@Test
 	public void shouldMultTwoByOne(){
 		assertEquals(2.0, calc.operationMult(2.0, 1.0), 0.1);
-	} 
+	}
+	
+	// this tests for a mutliplcation that is not the identity
+	@Test
+        public void shouldMultTwoBy4(){
+                assertEquals(8.0, calc.operationMult(2.0, 4.0), 0.1);
+        } 
 
 	@Test
 	public void shouldDivTwoByOne(){
 		assertEquals(2.0, calc.operationDiv(2.0, 1.0), 0.1);
 	}
 
+	/*
+	 * Test created the demonstrates that calculator subtraction is working.
+	 */
 	@Test
-	public void shouldDivFiveByTen(){
-		assertEquals(0.5, calc.operationDiv(5.0, 10.0), 0.1);
+	public void shouldSubtractFiveAndTwo(){
+		assertEquals(3.0, calc.operationSubst(5.0, 2.0), 0.1);
 	}
 
+	/*
+	 * Test created the demonstrates that calculator subtraction is working.
+	 */
 	@Test
-	public void shouldDivTenByFive(){
-		assertEquals(2.0, calc.operationDiv(10.0, 5.0), 0.1);
+	public void shouldSubtractTenAndTwo(){
+		assertEquals(8.0, calc.operationSubst(10.0, 2.0), 0.1);
 	}
-
-
 
 
 }
