@@ -42,6 +42,13 @@ public class CalculatorModelTest {
 		assertEquals(3.0, calc.operationSubst(5.0, 2.0), 0.1);
 	}
 
+	/*
+	 * Test created the demonstrates that calculator subtraction is working.
+	 */
+	@Test
+	public void shouldSubtractTenAndTwo(){
+		assertEquals(8.0, calc.operationSubst(10.0, 2.0), 0.1);
+	}
 
 
 }
