@@ -111,8 +111,10 @@ public class CalculatorModel {
         return (rhs-lhs);
     }
 
+    // use the standard  definition of multiplication to do this action
+    // multiplying the first argument by the second
     public double operationMult(double rhs, double lhs) {
-        return rhs;
+        return rhs * lhs;
     }
 
     public double operationDiv(double rhs, double lhs) {
