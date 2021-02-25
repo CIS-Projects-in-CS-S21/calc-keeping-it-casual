@@ -106,8 +106,9 @@ public class CalculatorModel {
         return lhs + lhs;
     }
 
+    //Fixed bug by changing equation from lhs-rhs to rhs-lhs
     public double operationSubst(double rhs, double lhs) {
-        return (lhs - rhs);
+        return (rhs-lhs);
     }
 
     public double operationMult(double rhs, double lhs) {

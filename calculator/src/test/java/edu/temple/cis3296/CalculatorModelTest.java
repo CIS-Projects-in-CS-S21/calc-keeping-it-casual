@@ -32,9 +32,23 @@ public class CalculatorModelTest {
 	@Test
 	public void shouldDivTwoByOne(){
 		assertEquals(2.0, calc.operationDiv(2.0, 1.0), 0.1);
-	} 
+	}
 
-	
+	/*
+	 * Test created the demonstrates that calculator subtraction is working.
+	 */
+	@Test
+	public void shouldSubtractFiveAndTwo(){
+		assertEquals(3.0, calc.operationSubst(5.0, 2.0), 0.1);
+	}
+
+	/*
+	 * Test created the demonstrates that calculator subtraction is working.
+	 */
+	@Test
+	public void shouldSubtractTenAndTwo(){
+		assertEquals(8.0, calc.operationSubst(10.0, 2.0), 0.1);
+	}
 
 
 }
