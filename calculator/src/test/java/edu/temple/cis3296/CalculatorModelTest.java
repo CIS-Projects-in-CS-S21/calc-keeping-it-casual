@@ -27,7 +27,12 @@ public class CalculatorModelTest {
 	@Test
 	public void shouldMultTwoByOne(){
 		assertEquals(2.0, calc.operationMult(2.0, 1.0), 0.1);
-	} 
+	}
+
+	@Test
+        public void shouldMultTwoBy4(){
+                assertEquals(8.0, calc.operationMult(2.0, 4.0), 0.1);
+        } 
 
 	@Test
 	public void shouldDivTwoByOne(){
