@@ -56,5 +56,22 @@ public class CalculatorModelTest {
 		assertEquals(8.0, calc.operationSubst(10.0, 2.0), 0.1);
 	}
 
+	/*
+		Test that demonstrates that division is working when RHS < LHS
+	 */
+	@Test
+	public void shouldDivFiveByTen(){
+		assertEquals(0.5, calc.operationDiv(5.0, 10.0), 0.1);
+	}
+
+	/*
+		Test that demonstrates that division is working when RHS > LHS
+	 */
+
+	@Test
+	public void shouldDivTenByFive(){
+		assertEquals(2.0, calc.operationDiv(10.0, 5.0), 0.1);
+	}
+
 
 }
